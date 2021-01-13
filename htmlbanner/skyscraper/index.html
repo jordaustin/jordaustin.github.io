@@ -65,12 +65,16 @@
         width: 100%;
         height: 50px;
         text-align: center;
-        display: block;
+        display: none;
         position: absolute;
-        bottom: 20px;
+        bottom: 35px;
         left: 0;
         z-index: 4;
         font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        font-size; 20pt;
       }
     </style>
   </head>
@@ -96,6 +100,7 @@
 document.getElementById('layerone').style.opacity = '0';
 document.getElementById('layertwo').style.opacity = '0';
 document.getElementById('layerthree').style.display = 'block';
+document.getElementById('layerfour').style.display = 'block';
 }, 4000);
     </script>
   </body>
