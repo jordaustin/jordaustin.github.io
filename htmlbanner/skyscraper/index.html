@@ -30,6 +30,8 @@
         top: 0;
         left: 0;
         z-index: 3;
+        opacity: 1;
+        transition: opacity 1s;
       }
       
       #layertwo {
@@ -45,6 +47,19 @@
         animation-duration: 4s;
         animation-iteration-count: 1;
         animation-fill-mode: forward;
+        opacity: 1;
+        transition: opacity 1s;
+      }
+       #layerthree {
+        width: 100%;
+        height: 100%;
+        background-image: url('final.png');
+        background-size: cover;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
       }
     </style>
   </head>
@@ -60,5 +75,12 @@
         
       </div>
     </div>
+    <script>
+      setTimeout(function(){ 
+document.getElementById('layerone').style.opacity = '0';
+document.getElementById('layertwo').style.opacity = '0';
+document.getElementById('layerthree').style.display = 'block';
+}, 4500);
+    </script>
   </body>
 </html>
